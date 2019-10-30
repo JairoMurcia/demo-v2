@@ -19,9 +19,10 @@ import javax.imageio.ImageIO;
 public class Gerudo extends Personaje {
 
     public Gerudo() {
-         this.direccion="d";
+        this.direccion="d";
         this.indice=0;
         this.ruta+="gerudo/";
+        this.fp=new Fabrica_pro_gerudo();
     }
 
     @Override
@@ -41,7 +42,13 @@ public class Gerudo extends Personaje {
                 break;
             case 'p':
                 cant=1;
-                break;    
+                break;
+            case 'e':
+                cant=1;
+                break;
+            case 'a':
+                cant=2;
+                break;         
             default:
                 break;
         }

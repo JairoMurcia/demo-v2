@@ -22,7 +22,8 @@ public class Deku extends Personaje {
     public Deku() {
         this.direccion="d";
         this.indice=0;
-         this.ruta+="deku/";
+        this.ruta+="deku/";
+        this.fp=new Fabrica_pro_deku(); 
     }
     
     
@@ -47,7 +48,13 @@ public class Deku extends Personaje {
                 break;
             case 'p':
                 cant=1;
-                break;    
+                break;   
+            case 'e':
+                cant=1;
+                break;
+            case 'a':
+                cant=2;
+                break;          
             default:
                 break;
         }
@@ -70,5 +77,7 @@ public class Deku extends Personaje {
         }
         
    }
+
+    
     
 }

@@ -23,6 +23,7 @@ public class Zora extends Personaje {
         this.direccion="d";
         this.indice=0;
         this.ruta+="zora/";
+        this.fp=new Fabrica_pro_zora();
     }
 
     @Override
@@ -42,7 +43,13 @@ public class Zora extends Personaje {
                 break;
             case 'p':
                 cant=1;
-                break;    
+                break;
+            case 'e':
+                cant=1;
+                break;
+            case 'a':
+                cant=2;
+                break;         
             default:
                 break;
         }

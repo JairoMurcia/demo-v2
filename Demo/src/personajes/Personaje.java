@@ -17,7 +17,7 @@ public abstract class Personaje implements Cloneable{
     protected int indice;
     protected int x,y;
     protected String accion;
-
+    protected Fabrica_proyectil fp;
     public void setAccion(String accion) {
         this.accion = accion;
         indice=0;
@@ -59,7 +59,16 @@ public abstract class Personaje implements Cloneable{
         this.indice=(this.indice+1)%this.imagenes.length;
     }
     public abstract void asignarAccion();
-
+    public  Proyectil get_proyectil(){
+        int dx;
+        if(this.direccion.charAt(0)=='i'){
+            dx=-50;
+        }else{
+            dx=50;
+        }
+        
+        return this.fp.get_proyectil(x+dx, y, dx);
+    };
     public String getDireccion() {
         return direccion;
     }

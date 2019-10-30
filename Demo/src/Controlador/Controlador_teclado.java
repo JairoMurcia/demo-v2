@@ -38,6 +38,12 @@ public class Controlador_teclado implements KeyListener {
         if(ke.getKeyCode()==KeyEvent.VK_SPACE){
             this.h.cambiar_accion("morir");
         }
+        if(ke.getKeyCode()==KeyEvent.VK_Z){
+            this.h.cambiar_accion("atacar");
+        }
+        if(ke.getKeyCode()==KeyEvent.VK_X){
+            this.h.cambiar_accion("escudar");
+        }
         if(ke.getKeyCode()==KeyEvent.VK_V){
             this.h.cambiar_accion("parado");
         }

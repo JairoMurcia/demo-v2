@@ -44,10 +44,12 @@ public class Controlador_botones implements ActionListener {
            s+="saltar:flecha hacia arriba<br>";
            s+="cambia de direccion:flecha izquierda y derecha<br> ";
            s+="morir : barra espaciadora";
-           s+="quedarse parado: tecla v</body></html>";
+           s+="quedarse parado: tecla v<br>";
+           s+="cubrirse: tecla x<br>";
+           s+="atacar:tecla z";        
            JLabel l=new JLabel(s);
            f.add(l);
-           f.setSize(300,150);
+           f.setSize(300,200);
            f.setLocationRelativeTo(null);
            f.setVisible(true);
         }
